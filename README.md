@@ -12,11 +12,15 @@ Testing cross-network communication1
 <img width="678" height="553" alt="image" src="https://github.com/user-attachments/assets/bfcb4016-05ab-4901-9ff8-8f92f83190ea" />
 
 After configuring router interfaces and adding DHCP
+
 ip dhcp excluded-address #.#.#.#
 
 ip dhcp pool LAN
+
 network ######## #########
+
 default-router ######
+
 dns-server #.#.#.#
 
 <img width="1684" height="745" alt="image" src="https://github.com/user-attachments/assets/0844df85-bf13-4b58-8155-f15cd98cfa7b" />
