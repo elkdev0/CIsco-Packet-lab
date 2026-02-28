@@ -1,3 +1,57 @@
+# 🏢 VLAN Configuration – IT Department
+
+## 🎯 Objective
+
+Create a VLAN for the IT department and assign a switch port to it.
+
+---
+
+## 🔧 Step 1 – Create VLAN 20
+
+```bash
+vlan 20
+name IT
+```
+
+---
+
+## 🔧 Step 2 – Assign Port to VLAN
+
+```bash
+interface te1/0/1
+switchport mode access
+switchport access vlan 20
+```
+
+---
+
+## 🔎 Verification
+
+```bash
+show vlan brief
+```
+
+Output:
+
+```bash
+20  IT  active  Te1/0/1
+```
+
+---
+
+## 🧠 Key Learning
+
+- VLANs provide Layer 2 segmentation.
+- Access ports belong to one VLAN only.
+- Devices connected to Te1/0/1 are now part of VLAN 20 (IT).
+- This isolates broadcast domains between departments.
+
+
+
+
+
+
+
 This lab demonstrates VLAN configuration and network segmentation using Cisco Packet Tracer.
 Three VLANs were created to simulate departmental separation:
 
