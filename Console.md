@@ -2,32 +2,32 @@
 Establish a console connection to a Cisco device using a USB-to-Serial cable inside a Windows virtual machine.
 Environment:
 
-VMware Workstation
+-VMware Workstation
 
-Windows 10 VM ("Joker")
+-Windows 10 VM ("Joker")
 
-PuTTY
+-PuTTY
 
-USB-to-Serial Console Cable
+-USB-to-Serial Console Cable
 
-Cisco Catalyst device
+-Cisco Catalyst device
 
 Steps Taken:
 
-Plugged USB-to-Serial console cable into host machine.
+-Plugged USB-to-Serial console cable into host machine.
 
-Passed USB device into VMware virtual machine.
+-Passed USB device into VMware virtual machine.
 
-Opened Device Manager inside VM.
+-Opened Device Manager inside VM.
 
 Verified console cable was detected as:
 USB Serial Port (COM3)
 
-Opened PuTTY and selected:
+-Opened PuTTY and selected:
 
-Connection Type: Serial
+-Connection Type: Serial
 
-Speed: 9600
+-Speed: 9600
 
 Adjusted serial line to match detected COM port:
-COM3
+-COM3
