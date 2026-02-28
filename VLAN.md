@@ -3,7 +3,6 @@
 ## 🎯 Objective
 
 Create a VLAN for the IT department and assign a switch port to it.
-
 ---
 
 ## 🔧 Step 1 – Create VLAN 20
