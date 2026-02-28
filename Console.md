@@ -1,65 +1,132 @@
 <img width="1929" height="911" alt="image" src="https://github.com/user-attachments/assets/de8de32e-bedf-4b6b-a021-b0f5ec00e198" />
+# 🔌 Console Access to Cisco Device Using PuTTY in VMware
+
+## 🎯 Objective
+
 Establish a console connection to a Cisco device using a USB-to-Serial cable inside a Windows virtual machine.
-## 🔌 Device Manager – Verifying Console COM Port
-
-### 🎯 Objective
-
-Verify that the USB-to-Serial console cable is properly detected inside the virtual machine and identify the assigned COM port.
 
 ---
 
-### 🖥️ Environment
+## 🖥️ Lab Environment
 
 - VMware Workstation
-- Windows 10 Virtual Machine
+- Windows 10 Virtual Machine ("Joker")
+- PuTTY
 - USB-to-Serial Console Cable
-- PuTTY (for serial connection)
+- Cisco Catalyst Switch
 
 ---
 
-### 🔎 Steps Performed
+## 🔎 Overview
 
-1. Connected the USB-to-Serial console cable to the host machine.
-2. Passed the USB device into the VMware virtual machine.
-3. Opened **Device Manager** inside the Windows VM.
-4. Expanded:
+This lab demonstrates how to establish direct console access to a Cisco network device from within a virtualized Windows environment.
 
-   ```
-   Ports (COM & LPT)
-   ```
+Console access is required for:
 
-5. Verified that the console cable appeared as:
-
-   ```
-   USB Serial Port (COM3)
-   ```
+- Initial device configuration
+- Password recovery
+- Troubleshooting
+- Out-of-band management
 
 ---
 
-### 🧠 Why This Step Is Important
+## 🧭 Steps Performed
 
-PuTTY must be configured to use the exact COM port assigned by Windows.
+### 1️⃣ Connect Console Cable
 
-If PuTTY is set to a different COM port (example: COM1 instead of COM3), the console connection will fail.
-
----
-
-### ⚠️ Common Issue
-
-If the USB Serial Port does not appear:
-
-- The USB device may not be connected to the VM
-- VMware USB passthrough may not be enabled
-- Drivers may not be installed
+- Plugged USB-to-Serial console cable into host machine.
+- Passed the USB device into the VMware virtual machine.
 
 ---
 
-### 🚀 Result
+### 2️⃣ Verify COM Port in Device Manager
 
-Confirmed that the console cable was assigned:
+Opened **Device Manager** inside the Windows VM.
 
+Navigated to:
+
+```
+Ports (COM & LPT)
+```
+
+Verified that the device appeared as:
+
+```
+USB Serial Port (COM3)
+```
+
+⚠️ This COM number is critical for PuTTY configuration.
+
+---
+
+### 3️⃣ Configure PuTTY
+
+Opened PuTTY and configured the following:
+
+Connection Type:
+```
+Serial
+```
+
+Serial Line:
 ```
 COM3
 ```
 
-This COM port was then used in PuTTY for establishing the serial console connection at 9600 baud rate.
+Speed (Baud Rate):
+```
+9600
+```
+
+> Note: Cisco devices use 9600 baud rate by default for console connections.
+
+---
+
+### 4️⃣ Establish Console Session
+
+Clicked **Open** in PuTTY.
+
+Successfully accessed the Cisco CLI via console connection.
+
+---
+
+## ✅ Result
+
+Console access was successfully established to the Cisco Catalyst device.
+
+This enabled:
+
+- Access to user EXEC mode
+- Entry into privileged EXEC mode
+- Device configuration from scratch
+
+---
+
+## 🧠 Key Learning
+
+- The PuTTY serial port must match the COM port assigned in Device Manager.
+- Cisco devices use 9600 baud rate by default.
+- Serial mismatch is a common troubleshooting issue.
+- Console access is essential for infrastructure-level configuration.
+
+---
+
+## 🏗️ Real-World Relevance
+
+This process mirrors what:
+
+- Data Center Technicians  
+- NOC Engineers  
+- Network Engineers  
+- Infrastructure Engineers  
+
+perform in production environments.
+
+Engineers routinely:
+
+- Verify COM ports
+- Set correct baud rates
+- Access devices via console
+- Perform initial configurations
+
+This lab reinforces real-world foundational networking skills.
