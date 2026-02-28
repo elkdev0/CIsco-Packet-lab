@@ -14,9 +14,9 @@ name IT
 ```
 
 ---
-<img width="432" height="91" alt="Screenshot 2026-02-27 205545" src="https://github.com/user-attachments/assets/011708a6-626a-47a3-b2c7-aa5cd534c588" />
-## 🔧 Step 2 – Assign Port to VLAN
 
+## 🔧 Step 2 – Assign Port to VLAN
+<img width="934" height="261" alt="Screenshot 2026-02-27 205635" src="https://github.com/user-attachments/assets/87af5dc4-ae5a-426b-8994-b58883593040" />
 ```bash
 interface te1/0/1
 switchport mode access
@@ -26,7 +26,7 @@ switchport access vlan 20
 ---
 
 ## 🔎 Verification
-<img width="934" height="261" alt="Screenshot 2026-02-27 205635" src="https://github.com/user-attachments/assets/87af5dc4-ae5a-426b-8994-b58883593040" />
+<img width="432" height="91" alt="Screenshot 2026-02-27 205545" src="https://github.com/user-attachments/assets/011708a6-626a-47a3-b2c7-aa5cd534c588" />
 ```bash
 show vlan brief
 ```
