@@ -34,7 +34,6 @@ show vlan brief
 ```
 
 Output:
-<img width="862" height="501" alt="Screenshot 2026-02-27 205526" src="https://github.com/user-attachments/assets/60fe1eb5-cdfd-414e-b221-5fa531c8f42e" />
 
 ```bash
 20  IT  active  Te1/0/1
