@@ -1,6 +1,7 @@
 # 🖧 Assigning IP Address to Router Interface (G0/0)
 
 ## 📌 Problem
+<img width="900" height="522" alt="Screenshot 2026-02-27 204602" src="https://github.com/user-attachments/assets/082e1d48-9b92-4dc3-ae7c-7baa29632635" />
 
 The router interface `GigabitEthernet0/0` had:
 
@@ -48,6 +49,7 @@ show ip interface brief
 ```
 
 Expected output:
+<img width="862" height="501" alt="Screenshot 2026-02-27 205526" src="https://github.com/user-attachments/assets/6d6d102d-6e85-4c32-8b70-cb0467224ad2" />
 
 ```bash
 GigabitEthernet0/0  192.168.2.1  YES manual  up  up
