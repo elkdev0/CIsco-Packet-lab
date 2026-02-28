@@ -3,6 +3,7 @@
 ## 🎯 Objective
 
 Create a VLAN for the IT department and assign a switch port to it.
+
 ---
 
 ## 🔧 Step 1 – Create VLAN 20
@@ -15,7 +16,7 @@ name IT
 ---
 
 ## 🔧 Step 2 – Assign Port to VLAN
-<img width="934" height="261" alt="Screenshot 2026-02-27 205635" src="https://github.com/user-attachments/assets/87af5dc4-ae5a-426b-8994-b58883593040" />
+<img width="432" height="91" alt="Screenshot 2026-02-27 205545" src="https://github.com/user-attachments/assets/5891137b-230c-45cf-9014-2c5622378891" />
 ```bash
 interface te1/0/1
 switchport mode access
@@ -25,21 +26,19 @@ switchport access vlan 20
 ---
 
 ## 🔎 Verification
-<img width="432" height="91" alt="Screenshot 2026-02-27 205545" src="https://github.com/user-attachments/assets/011708a6-626a-47a3-b2c7-aa5cd534c588" />
+<img width="934" height="261" alt="Screenshot 2026-02-27 205635" src="https://github.com/user-attachments/assets/d5072583-a126-4d47-8c7d-6eb93fb16336" />
 ```bash
 show vlan brief
 ```
 
 Output:
+<img width="862" height="501" alt="Screenshot 2026-02-27 205526" src="https://github.com/user-attachments/assets/60fe1eb5-cdfd-414e-b221-5fa531c8f42e" />
 
 ```bash
 20  IT  active  Te1/0/1
 ```
 
 ---
-In CLI
-<img width="862" height="501" alt="Screenshot 2026-02-27 205526" src="https://github.com/user-attachments/assets/419917d4-986c-4333-b2f0-e5f8c6a891d6" />
-
 
 ## 🧠 Key Learning
 
