@@ -1,5 +1,6 @@
 <img width="1929" height="911" alt="image" src="https://github.com/user-attachments/assets/de8de32e-bedf-4b6b-a021-b0f5ec00e198" />
 Establish a console connection to a Cisco device using a USB-to-Serial cable inside a Windows virtual machine.
+
 Environment:
 
 -VMware Workstation
