@@ -43,3 +43,6 @@ The network was subnetted using /26 networks from 192.168.50.0/24.
 interface g0/0/0
  no ip address
  no shutdown
+
+## 🔀 Subinterfaces (R1)
+
