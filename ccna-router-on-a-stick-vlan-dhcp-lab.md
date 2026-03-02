@@ -18,7 +18,8 @@ The network was subnetted using /26 networks from 192.168.50.0/24.
 
 ## 🖥️ Network Topology
 
-![Topology Screenshot](images/topology.png)
+<img width="2206" height="891" alt="image" src="https://github.com/user-attachments/assets/fc6f62ac-4d70-4844-888a-e685d11254cb" />
+
 
 ---
 
